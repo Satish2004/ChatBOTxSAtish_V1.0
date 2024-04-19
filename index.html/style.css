@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,400;1,500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+.effect{
+  margin-top: 150px;
+  margin-left: 40%;
+  text-align: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+
+}
+
+
+
+
+#start,
+#stop,
+#speak{
+  background-color: rgb(0, 157, 255);
+  font-size: 4rem;
+  margin-left: 10px;
+  transform: translateX(560px);
+  margin-top: 18%;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  transform: translateX(990px);
+  
+}
+.gift img{
+  height: 100px;
+  width: 100px;
+  
+}
+
+
+.download{
+  transform: translateY(90px) translateX(100px);
+  margin-left: 980px;
+}
+.download a{
+  color: white;
+  font-size: small;
+ 
+}
+.download a:hover{
+color: rgb(0, 136, 255);
+}
+.download i{
+  color: white;
+}
+
+
+
+/* Mobile M (Large) */
+@media only screen and (min-width: 375px) {
+  .btn-container{
+  transform: translateX(-450px) translateY(100px);
+}
+.effect{
+  transform: translateX(-39px);
+}
+.download {
+  transform: translateX(-399px) translateY(100px);
+
+}
+}
+
+/* Mobile M (Medium) */
+@media only screen and (max-width:425px) {
+  .effect{
+    transform: translateX(-100px);
+  }
+  
+}
+
+/* Mobile  */
+@media only screen and (max-width:425px) {
+  .effect{
+    transform: translateX(-100px);
+  }
+  
+}
+/* Mobile S (Small) */
+@media only screen and (max-width: 322px) {
+.effect{
+  transform: translateX(-49px)
+}
+  .btn-container {
+    transform: translateX(-373px) translateY(200px);
+    color: white;
+    width: 30%;
+    height: 40px;
+  }
+  .btn-container button:hover{
+    background-color: aqua;
+  }
+  .download{
+    transform: translateX(-400px) translateY(600px);
+    color: white;
+    margin-top: 50px;
+    align-items: center;
+    font-size: 0.5rem;
+  
+  }
+
+}
