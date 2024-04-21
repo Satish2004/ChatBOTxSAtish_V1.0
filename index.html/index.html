@@ -1,48 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/style.css" class="css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="icon" href="assets/img/iron-pic.png">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Hi I am FRIDAy" />
+    <title>S A T I S H - C H A T B O T</title>
+    <link rel="stylesheet" href="assets/style.css" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S A T I S H  - C H A T B O T</title>
-</head>
-<body>
+  </head>
+  <body>
+    <audio src="assets/mp3/Jarvis.mp3" id="j_intro"></audio>
+    <audio src="assets/mp3/power up.mp3" id="turn_on"></audio>
 
-  
-   
+    <div class="machine hide_on_small">
+      <div class="clock cont">
+        <img src="assets/img/clock1.png" class="icon" />
+        <p id="time"></p>
+      </div>
+      <div class="internet cont">
+        <img src="assets/img/internet1.png" class="icon" />
+        <p id="internet"></p>
+      </div>
+      <div class="battery cont">
+        <img src="assets/img/battery1.png" class="icon" />
+        <p id="battery"></p>
+      </div>
+      <div class="temp">
+        <p id="location"></p>
+        <p id="country"></p>
+        <p id="weatherT"></p>
+        <p id="weatherD"></p>
+        <img src="" id="weatherIcon" />
+        <p id="oTemp"></p>
+        <p id="feelLikeTemp"></p>
+        <p id="minT"></p>
+        <p id="maxT"></p>
+      </div>
+      <!-- <img src="assets/heart.gif" id="heart" /> -->
+      <!-- <img src="./iron_man.gif" id="iron_man" /> -->
+    </div>
 
-        
-        <div class="effect">
-          <img src="assets/gif/heart.gif" alt="">
-         </div>
-  
-       </div>
-      <!--this is button -->
-       
-     <div class="btn-container">
-      <button id="start"><i class="fa-solid fa-microphone btnIcon"></i></button>
-      <button id="stop"><i class="fa-solid fa-microphone-slash btnIcon"></i></button>
-      <button id="speak"><i class="fa-solid fa-volume-high btnIcon"></i></button>
+    <button id="start_jarvis_btn" class="hide_on_small">
+      <img src="assets/gif/start.gif" alt="start jarvis" />
+      <p>Turn On</p>
+    </button>
+
+    <button id="stop_jarvis_btn" class="hide_on_small">
+      <img src="assets/gif/end.gif" alt="start jarvis" />
+      <p>Turn Off</p>
+    </button>
+
+    <div class="small_jarvis hide_on_small">
     
-     </div>
+    </div>
 
+    <div class="bg-hacker">
+      <img src="assets/gif/bg.gif" alt="">
+      <h2>Managed by satish chandra</h2>
+    </div>
 
+    <div class="jarvis_setup in_middle hide_on_small">
+      <label for="">Your Name</label>
+      <input type="text" />
+      <br />
+      <label for="">Your Bio</label>
+      <input type="text" />
+      <br />
+      <label for="">Your Location</label>
+      <input type="text" />
+      <br />
+      <label for="">Instagram Profile</label>
+      <input type="text" />
+      <br />
+      <label for="">Twitter Profile</label>
+      <input type="text" />
+      <br />
+      <label for="">GitHub Profile</label>
+      <input type="text" />
+      <br />
+      <button id="sub_btn">Submit</button>
+    </div>
 
+    <!-- <div class="messages hide_on_small"></div> -->
 
-<div class="download">
-  <i class="fa-solid fa-arrow-down"></i> <a href="COMMAND USE IN CHAT BOT.pdf" download="">Download command</a>
-</div>
+    <div class="commands in_middle hide_on_small"></div>
+
+    <div class="new_jarvis_window">
+     
+    </div>
     
-   
-<!-- <audio controls autoplay= "" id="song">
-  <source src="Jarvis.mp3">
-</audio> -->
+<!-- footer -->
 
-  
-  <script src="assets/script.js"></script>
-</body>
+
+
+
+
+
+    <script src="assets/script.js"></script>
+  </body>
 </html>
